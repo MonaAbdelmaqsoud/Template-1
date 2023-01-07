@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ldlv">
+    <meta name="Description" content="ldlv">
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/offer.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/numbers.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!--header: to put navbar & logo inside-->
+    <div class="header">
+        <!--container class to make only the content in center-->
+        <div class="container">
+            <!--another solution for float: put the elements inside a div and give it (overflow: hidden) in css-->
+            <div class="header-content">
+                <div class="logo float-left">
+                    <!--(draggable: false) is used to make the img un draggable-->
+                    <img src="images/logo-alt.webp" alt="logo" draggable="false">
+                </div> 
+                <ul class="nav float-left">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Prices</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li  class="dropdown">
+                        <a href="#">Blog</a>
+                        <!--to make the dropdown menu inside-->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">blog post</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+                <!-- a solution for float: to put a div after the last element and give it(clear: both) in css-->
+                <div class="clear"></div>
+            </div>
+        </div>     
+    </div> <!--./header-->
+
+    <!--home section-->
+    <div class="home">
+        <!--we put everything inside overlay to make all content selectable-->
+        <div class="overlay"> 
+            <div class="home-content">
+                <h1 class="main-heading upper-case"> we are creative agency </h1>
+                <p class="home-discription"> Quasi repellat recusandae pariatur illum voluptas expedita eaque ducimus, ab cum eum blanditiis facere, laboriosam nesciunt reprehenderit iusto atque sed tempora fuga.</p>
+                <button class="btn btn-start hover-opacity"> get started ! </button>
+                <button class="btn btn-learn hover-opacity"> learn more ! </button>
+            </div> <!-- ./home-content -->
+        </div> <!-- ./overlay -->
+    </div> <!-- ./home -->
+
+    <!--about section -->
+    <div class="about padding-y">
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">welcome to website</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="about-content">
+                <div class="about-item ltr-effect float-left">
+                    
+                    <i class="icon fa fa-cogs fa-2x"></i>
+                    <h3 class="about-item-title capitalize">fully customizable</h3>
+                    <p class="about-item-discription">Optio temporibus enim, vitae nisi quas aperiam magni, expedita dolores dolorem cum.</p>
+                    <a href="#" class="about-item-link capitalize">read more</a>
+    
+                </div> <!-- ./about-item -->
+
+                <div class="about-item mg-5 ltr-effect float-left">
+                    
+                    <i class=" icon fa fa-magic fa-2x"></i>
+                    <h3 class="about-item-title capitalize">fully customizable</h3>
+                    <p class="about-item-discription">Optio temporibus enim, vitae nisi quas aperiam magni, expedita dolores dolorem cum.</p>
+                    <a href="#" class="about-item-link capitalize">read more</a>
+    
+                </div> <!-- ./about-item -->
+
+                <div class="about-item ltr-effect float-left">
+                    
+                    <i class="icon fa fa-mobile fa-2x"></i>
+                    <h3 class="about-item-title capitalize">fully customizable</h3>
+                    <p class="about-item-discription">Optio temporibus enim, vitae nisi quas aperiam magni, expedita dolores dolorem cum.</p>
+                    <a href="#" class="about-item-link capitalize">read more</a>
+    
+                </div> <!-- ./about-item -->
+                <div class="clear"></div> <!--to solve float problem-->
+            </div> <!-- ./about-content -->
+        </div> <!-- ./container -->
+    </div> <!-- ./about -->
+
+    <!--portfoilio section-->
+    <div class="portfolio padding-y">
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">featured works</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="portfolio-content">
+                <div class="portfolio-item float-left">
+                    <img src="images/work/work1.webp"> 
+                    
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category upper-case">category</span>
+                            <h3 class="layer-content-title">Lorem, ipsum dolor.</h3>
+                            <a href="#"><i class="fa fa-edit p-icon"></i></a>
+                            <a href="#"><i class="fa fa-search p-icon"></i></a>
+                        </div>
+                    </div>  <!-- ./layer-content --> 
+
+                </div> <!-- ./portfolio-item -->
+
+                <div class="portfolio-item mg float-left">
+                    <img src="images/work/work2.webp">   
+                    
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category upper-case">category</span>
+                            <h3 class="layer-content-title">Lorem, ipsum dolor.</h3>
+                            <a href="#"><i class="fa fa-edit p-icon"></i></a>
+                            <a href="#"><i class="fa fa-search p-icon"></i></a>
+                        </div>
+                    </div>  <!-- ./layer-content --> 
+                </div> <!-- ./portfolio-item -->
+
+                <div class="portfolio-item float-left">
+                    <img src="images/work/work3.webp"> 
+                    
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category upper-case">category</span>
+                            <h3 class="layer-content-title">Lorem, ipsum dolor.</h3>
+                            <a href="#"><i class="fa fa-edit p-icon"></i></a>
+                            <a href="#"><i class="fa fa-search p-icon"></i></a>
+                        </div>
+                    </div>  <!-- ./layer-content --> 
+                </div> <!-- ./portfolio-item -->
+
+                <div class="portfolio-item float-left">
+                    <img src="images/work/work4.webp">    
+
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category upper-case">category</span>
+                            <h3 class="layer-content-title">Lorem, ipsum dolor.</h3>
+                            <a href="#"><i class="fa fa-edit p-icon"></i></a>
+                            <a href="#"><i class="fa fa-search p-icon"></i></a>
+                        </div>
+                    </div>  <!-- ./layer-content --> 
+                </div> <!-- ./portfolio-item -->
+
+                <div class="portfolio-item mg float-left">
+                    <img src="images/work/work5.webp">   
+                    
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category upper-case">category</span>
+                            <h3 class="layer-content-title">Lorem, ipsum dolor.</h3>
+                            <a href="#"><i class="fa fa-edit p-icon"></i></a>
+                            <a href="#"><i class="fa fa-search p-icon"></i></a>
+                        </div>
+                    </div>  <!-- ./layer-content --> 
+                </div> <!-- ./portfolio-item -->
+
+                <div class="portfolio-item float-left">
+                    <img src="images/work/work6.webp">   
+                    
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category upper-case">category</span>
+                            <h3 class="layer-content-title">Lorem, ipsum dolor.</h3>
+                            <a href="#"><i class="fa fa-edit p-icon"></i></a>
+                            <a href="#"><i class="fa fa-search p-icon"></i></a>
+                        </div>
+                    </div>  <!-- ./layer-content --> 
+                </div> <!-- ./portfolio-item -->
+
+                <div class="clear"></div> <!--to solve float problem-->
+            </div> <!-- ./portfolio-content -->
+        </div> <!-- ./container-->
+    </div> <!-- ./portfolio-->
+
+    <!--offer section-->
+    <div class="offer padding-y">
+         <!--section header-->
+         <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">what we offer</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="offer-content overflow-hidden">
+                <div class="offer-item  ltr-effect float-left">
+                    
+                    <i class="icon fa-regular fa-gem fa-2x"></i>
+                    <h2 class="offer-item-title capitalize">app development</h2>
+                    <p class="offer-item-description capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente.</p>
+                
+                </div> <!-- ./offer-item -->
+
+                <div class="offer-item mg-5 ltr-effect float-left">
+                    
+                    <i class="icon fa-regular fa-gem fa-2x"></i>
+                    <h2 class="offer-item-title capitalize">graphic design</h2>
+                    <p class="offer-item-description capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente.</p>
+                
+                </div> <!-- ./offer-item -->
+
+                <div class="offer-item ltr-effect float-left">
+                    
+                    <i class="icon fa-regular fa-gem fa-2x"></i>
+                    <h2 class="offer-item-title capitalize">creative idea</h2>
+                    <p class="offer-item-description capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente.</p>
+                
+                </div> <!-- ./offer-item -->
+
+                <div class="offer-item ltr-effect float-left">
+                    
+                    <i class="icon fa-regular fa-gem fa-2x"></i>
+                    <h2 class="offer-item-title capitalize">markiting</h2>
+                    <p class="offer-item-description capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente.</p>
+                
+                </div> <!-- ./offer-item -->
+
+                <div class="offer-item mg-5 ltr-effect float-left">
+                    
+                    <i class="icon fa-regular fa-gem fa-2x"></i>
+                    <h2 class="offer-item-title capitalize">awsome support</h2>
+                    <p class="offer-item-description capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente.</p>
+                
+                </div> <!-- ./offer-item -->
+
+                <div class="offer-item ltr-effect float-left">
+                    
+                    <i class="icon fa-regular fa-gem fa-2x"></i>
+                    <h2 class="offer-item-title capitalize">abrand design</h2>
+                    <p class="offer-item-description capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente.</p>
+                
+                </div> <!-- ./offer-item -->
+                
+            </div> <!-- ./offer-content -->
+        </div> <!-- ./container -->
+    </div> <!-- ./offer -->
+
+    <!--services section-->
+    <div class="service padding-y">
+
+        <div class="container">
+            <div class="service-item float-left">
+                <!--section header-->
+                <div class="section-header">
+                <h2 class="section-title mg-b-10 capitalize">why choose us</h2>
+                <span class="line"></span>
+                </div> <!-- ./section-header-->
+                
+                <p class="service-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, perspiciatis vel cum maiores consequuntur minima fugiat nostrum alias, ratione aspernatur sint? Numquam sequi magnam, molestias amet nihil odit error rerum?</p>
+
+                <ul class="service-list">
+                    <li><i class="fa fa-check fa-fw service-icon"></i>Lorem ipsum dolor sit amet, consectetur adipisicin elit. Ipsum.</li>
+                    <li><i class="fa fa-check fa-fw service-icon"></i>Lorem ipsum dolor sit amet, consectetur adipisicin elit. Ipsum.</li>
+                    <li><i class="fa fa-check fa-fw service-icon"></i>Lorem ipsum dolor sit amet, consectetur adipisicin elit. Ipsum.</li>
+                    <li><i class="fa fa-check fa-fw service-icon"></i>Lorem ipsum dolor sit amet, consectetur adipisicin elit. Ipsum.</li>
+                    
+                </ul> <!-- ./sevice-list-->
+
+            </div><!-- ./service-item-->
+            
+            <div class="service-item float-left">
+                <div class="service-item-img">
+                    <img src="images/about/about1.webp" alt="">
+                </div> <!-- .service-item-img-->
+    
+                <ul class="service-bullets">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div><!-- ./service-item-->
+
+            <div class="clear"></div> <!--for the float-->
+
+        </div> <!-- ./container-->
+
+    </div> <!-- ./service-->
+
+    <!--numbers section-->
+    <div class="numbers">
+        <div class="overlay">
+            <div class="container">
+                <div class="number-items overflow-hidden">
+
+                    <div class="number-item float-left">
+                        <i class="icon fa fa-users fa-2x"></i>
+                        <h3 class="number-item-title">451k</h3>
+                        <span class="number-item-text">happy clients</span>
+                    </div> <!-- ./number-item -->
+
+                    <div class="number-item float-left">
+                        <i class="icon fa fa-trophy fa-2x"></i>
+                        <h3 class="number-item-title">451k</h3>
+                        <span class="number-item-text">happy clients</span>
+                    </div> <!-- ./number-item -->
+
+                    <div class="number-item float-left">
+                        <i class="icon fa fa-coffee fa-2x"></i>
+                        <h3 class="number-item-title">451k</h3>
+                        <span class="number-item-text">happy clients</span>
+                    </div> <!-- ./number-item -->
+
+                    <div class="number-item float-left">
+                        <i class="icon fa fa-file fa-2x"></i>
+                        <h3 class="number-item-title">451k</h3>
+                        <span class="number-item-text">happy clients</span>
+                    </div> <!-- ./number-item -->
+
+                </div> <!-- ./numbers-items -->
+            </div> <!-- ./overlay -->
+        </div> <!-- ./overlay-->
+    </div> <!-- ./numbers-->
+
+    <!--pricing sec-->
+    <div class="pricing padding-y">
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">pricing table</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="pricing-items overflow-hidden">
+                <div class="pricing-item ttb-effect float-left">
+                    <span class="pricing-item-text upper-case">basic plan</span>
+                    <div class="pricing-item-permonth">
+                        <h3 class="dollar">$9</h3>
+                        <span class="month upper-case">/ month</span>
+                    </div> 
+
+                    <ul class="pricing-list">
+                        <li>1GB disk space</li>
+                        <li>100 email account</li>
+                        <li>24/24 support</li>
+                    </ul>
+                    <button class="pricing-item-purchase">purchase</button>
+                </div> <!-- ./pricing-item -->
+
+                <div class="pricing-item mg-5 ttb-effect float-left">
+                    <span class="pricing-item-text upper-case">basic plan</span>
+                    <div class="pricing-item-permonth">
+                        <h3 class="dollar">$19</h3>
+                        <span class="month upper-case">/ month</span>
+                    </div> 
+
+                    <ul class="pricing-list">
+                        <li>1GB disk space</li>
+                        <li>100 email account</li>
+                        <li>24/24 support</li>
+                    </ul>
+                    <button class="pricing-item-purchase">purchase</button>
+                </div> <!-- ./pricing-item -->
+
+                <div class="pricing-item ttb-effect float-left">
+                    <span class="pricing-item-text upper-case">basic plan</span>
+                    <div class="pricing-item-permonth">
+                        <h3 class="dollar">$39</h3>
+                        <span class="month upper-case">/ month</span>
+                    </div> 
+
+                    <ul class="pricing-list">
+                        <li>1GB disk space</li>
+                        <li>100 email account</li>
+                        <li>24/24 support</li>
+                    </ul>
+                    <button class="pricing-item-purchase">purchase</button>
+                </div> <!-- ./pricing-item -->
+            </div> <!-- ./pricing-items -->
+        </div> <!-- ./container-->
+    </div> <!-- ./pricing-->
+
+    <!--reviews section-->
+    <div class="reviews">
+
+        <!--to make overlay balck layer-->
+        <div class="overlay"> 
+            <div class="container">
+
+                <!--to make the parent overflow:hidden-->
+                <div class="reviews-content overflow-hidden">
+
+                    <div class="review-item capitalize float-left">
+                        <div class="review-top-layer">
+                            <img src="images/Testimonial/perso1.webp" alt="">
+                            <h3>john doe</h3>
+                            <span>web designer</span>
+                        </div><!--./review-toplayer-->
+
+                        <p class="review-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem hic saepe aliquam neque similique.
+                        </p><!--./review-description-->
+                    </div><!--./review-item-->
+
+                    <div class="review-item capitalize float-left">
+                        <div class="review-top-layer">
+                            <img src="images/Testimonial/perso2.webp" alt="">
+                            <h3>john doe</h3>
+                            <span>web designer</span>
+                        </div><!--./review-toplayer-->
+
+                        <p class="review-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem hic saepe aliquam neque similique.
+                        </p><!--./review-description-->
+                    </div><!--./review-item-->
+
+                </div><!--./reviews-content-->
+            </div><!--./container-->
+        </div><!--./overlay-->
+    </div><!-- ./reviews -->
+
+    <!--team section-->
+    <div class="team padding-y">
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">our team</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="team-content overflow-hidden">
+                <div class="team-item ttb-effect float-left">
+                    <div class="team-img">
+                        <img src="images/team/team1.webp" alt="">
+
+                        <div class="team-overlay">
+                            <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="icon fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div><!-- ./team-img-->
+                    <div class="team-info">
+                        <h3 class="team-info-title capitalize">jhon doe</h3>
+                        <span class="team-info-text upper-case">web designer</span>
+                    </div><!-- ./team-info-->
+                </div><!-- ./team-item-->
+
+                <div class="team-item ttb-effect mg-5 float-left">
+                    <div class="team-img">
+                        <img src="images/team/team2.webp" alt="">
+
+                        <div class="team-overlay">
+                            <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="icon fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div><!-- ./team-img-->
+                    <div class="team-info">
+                        <h3 class="team-info-title capitalize">jhon doe</h3>
+                        <span class="team-info-text upper-case">web designer</span>
+                    </div><!-- ./team-info-->
+                </div><!-- ./team-item-->
+
+                <div class="team-item ttb-effect float-left">
+                    <div class="team-img">
+                        <img src="images/team/team3.webp" alt="">
+
+                        <div class="team-overlay">
+                            <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="icon fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div><!-- ./team-img-->
+                    <div class="team-info">
+                        <h3 class="team-info-title capitalize">jhon doe</h3>
+                        <span class="team-info-text upper-case">web designer</span>
+                    </div><!-- ./team-info-->
+                </div><!-- ./team-item-->
+
+            </div><!-- ./team-content-->
+        </div><!-- ./container-->
+    </div><!-- ./team-->
+
+    <!-- blog section-->
+    <div class="blog padding-y">
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">recent news</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="blog-content overflow-hidden">
+                <div class="blog-item float-left">
+
+                    <div class="blog-item-img">
+                        <img src="images/blog/blog1.webp" alt="">
+                    </div> <!-- ./blog-item-img -->
+
+                    <div class="blog-info">
+                        <ul class="blog-list">
+                            <li>
+                                <i class="icon fa fa-user"></i>
+                                John doe
+                            </li>
+                            <li>
+                                <i class="icon fa fa-clock"></i>
+                                18 oct
+                            </li>
+                            <li>
+                                <i class="icon fa fa-comments"></i>
+                                57
+                            </li>
+                            
+                        </ul> <!-- ./blog-list -->
+                        <h3 class="blog-title capitalize">Lorem ipsum dolor sit amet.</h3>
+                        <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum facere alias aperiam porro sequi harum maxime pariatur.</p>
+                        <a href="#" class="blog-link">read more</a>
+                    </div><!-- ./blog-info -->
+
+                </div> <!-- ./blog-item -->
+
+                <div class="blog-item mg-5 float-left">
+                    <div class="blog-item-img">
+                        <img src="images/blog/blog2.webp" alt="">
+                    </div> <!-- ./blog-item-img -->
+
+                    <div class="blog-info">
+                        <ul class="blog-list">
+                            <li>
+                                <i class="icon fa fa-user"></i>
+                                John doe
+                            </li>
+                            <li>
+                                <i class="icon fa fa-clock"></i>
+                                18 oct
+                            </li>
+                            <li>
+                                <i class="icon fa fa-comments"></i>
+                                57
+                            </li>
+                            
+                        </ul> <!-- ./blog-list -->
+                        <h3 class="blog-title capitalize">Lorem ipsum dolor sit amet.</h3>
+                        <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum facere alias aperiam porro sequi harum maxime pariatur.</p>
+                        <a href="#" class="blog-link">read more</a>
+                    </div><!-- ./blog-info -->
+
+                </div> <!-- ./blog-item -->
+
+                <div class="blog-item float-left">
+                    <div class="blog-item-img">
+                        <img src="images/blog/blog3.webp" alt="">
+                    </div> <!-- ./blog-item-img -->
+
+                    <div class="blog-info">
+                        <ul class="blog-list">
+                            <li>
+                                <i class="icon fa fa-user"></i>
+                                John doe
+                            </li>
+                            <li>
+                                <i class="icon fa fa-clock"></i>
+                                18 oct
+                            </li>
+                            <li>
+                                <i class="icon fa fa-comments"></i>
+                                57
+                            </li>
+                            
+                        </ul> <!-- ./blog-list -->
+                        <h3 class="blog-title capitalize">Lorem ipsum dolor sit amet.</h3>
+                        <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum facere alias aperiam porro sequi harum maxime pariatur.</p>
+                        <a href="#" class="blog-link">read more</a>
+                    </div><!-- ./blog-info -->
+
+                </div> <!-- ./blog-item -->
+
+            </div> <!-- ./blog-content-->
+
+        </div> <!-- ./container-->
+    </div><!-- ./blog-->
+
+    <!--contact section-->
+    <div class="contact padding-y">
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title mg-b-10 capitalize">get in touch</h2>
+            <span class="line"></span>
+        </div> <!-- ./section-header-->
+
+        <div class="container">
+            <div class="contact-items overflow-hidden">
+
+                <div class="contact-item float-left">
+                    <i class="icon fa fa-phone fa-2x"></i>
+                    <h3 class="contact-title capitalize">phone</h3>
+                    <span class="contact-info">512421-3940</span>
+                </div> <!-- ./contact-item-->
+
+                <div class="contact-item mg-5 float-left">
+                    <i class="icon fa fa-envelope fa-2x"></i>
+                    <h3 class="contact-title capitalize">email</h3>
+                    <span class="contact-info">email@support.com</span>
+                </div> <!-- ./contact-item-->
+
+                <div class="contact-item float-left">
+                    <i class="icon fa fa-location-dot fa-2x"></i>
+                    <h3 class="contact-title capitalize">address</h3>
+                    <span class="contact-info">123 abc street</span>
+                </div> <!-- ./contact-item-->
+
+            </div><!-- ./contact-items-->
+
+            <form class="contact-form">
+                <input type="text" placeholder="Name" class="name">
+                <input type="text" placeholder="Email" class="email">
+                <input type="text" placeholder="Subject" class="subject">
+                <textarea cols="50" rows="5" placeholder="Message" class="message"></textarea>
+                <button class="btn capitalize">send message</button>
+            </form>
+        </div><!-- ./container-->
+    </div><!-- ./contact -->
+
+    <!--footer section-->
+    <div class="footer">
+        <img src="images/logo-alt.webp" alt="">
+        <ul class="footer-links">
+            <li><a href="#" class="hover-opacity"><i class="icon fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="icon fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="icon fa-brands fa-youtube"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="icon fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="icon fa-brands fa-google-plus"></i></a></li>
+            
+        </ul>
+        <p class="copyright upper-case">copyright &copy; 2019 . all right reserved by colorlib</p>
+    </div><!-- ./footer -->
+
+
+
+    <script src="js/all.min.js"></script>
+</body>
+</html>

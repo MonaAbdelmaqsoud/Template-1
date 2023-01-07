@@ -1,0 +1,33 @@
+.mg-b-5{
+    margin-bottom: 5px;
+}
+
+.mg-b-10{
+    margin-bottom: 10px;
+}
+
+.mg-b-20{
+    margin-bottom: 20px;
+}
+
+.mg-5{
+    margin: 0 5%;
+}
+
+.upper-case{
+    text-transform: uppercase; /*to make all letters capital*/
+}
+.capitalize{
+    text-transform: capitalize; /*to make the first letter of every word captalized*/
+}
+
+.float-left{
+    float: left;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+
+

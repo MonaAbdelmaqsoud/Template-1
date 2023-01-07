@@ -1,0 +1,90 @@
+/*//////// 3.4. portfolio div /////*/
+.portfolio{
+    background: var(--bg-gray);
+}
+
+.portfolio-item{
+    width: 32%;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 20px;   /*to make padding around the image inside*/
+}
+
+.portfolio-item .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;   /*to make it disappear when not hovering*/
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+
+.portfolio-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.layer-content .layer-info{
+    position: absolute;
+    left: 50%;   /*for hero image*/
+    top: 50%;   /*for hero image*/
+    transform: translate(-50%, -50%);  /*for hero image*/
+    text-align: center;
+    width: 80%;
+}
+
+.layer-content .category{
+    color: var(--mainColor);
+    display: block;  /*to make margin-bottom work*/
+    margin-bottom: 5px;
+    position: relative;  /*to make the moving motion at hovering*/
+    top: 10px;   /*to make the moving motion: at hovering it sets back to 0*/
+    transition: top 0.5s ,opacity 0.5s;
+    opacity: 0;
+    transition-delay: 0.2s; /*used to make the element delay at transition*/
+}
+.layer-content-title{
+    font-size: 20px;
+    color: var(--whiteColor);
+    margin-bottom: 10px;      
+    position: relative;  /*to make the moving motion at hovering*/
+    top: 10px;   /*to make the moving motion: at hovering it sets back to 0*/
+    transition: top 0.5s ,opacity 0.5s;
+    opacity: 0;
+    transition-delay: 0.3s;/*used to make the element delay at transition*/
+}
+.layer-content a {
+    display: inline-block; /*to make them stay next to each other*/
+    width: 40px;
+    height: 40px;
+    background: var(--mainColor);
+    position: relative;  /*to make the moving motion at hovering*/
+    top: 10px;   /*to make the moving motion: at hovering it sets back to 0*/
+    transition: top 0.5s ,opacity 0.5s;
+    opacity: 0;
+    transition-delay: 0.3s; /*used to make the element delay at transition*/
+}
+.layer-info a .p-icon {
+   margin-top: 25%;   /*i did it like that because line-height:40px is not working*/
+   color: var(--whiteColor);
+}
+
+/*to make the content move a bit at hovering*/
+.portfolio-item:hover .layer-content-title,
+.portfolio-item:hover .layer-content a, 
+.portfolio-item:hover .layer-content .category{
+    top: 0;
+    opacity: 1;
+} 
+
+.portfolio-item img{
+    width: 100%;
+
+}
+.portfolio-item.mg{
+    margin: 0 2%;
+}

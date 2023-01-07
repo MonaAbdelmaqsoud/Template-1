@@ -1,0 +1,43 @@
+/*//////// 3.9. reviews sec /////*/
+.reviews{
+    position: relative;
+    background-image: url(../images/background/background3.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.reviews-content{
+    padding: 120px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.review-item{
+    width: 50%;
+    color: var(--whiteColor);
+}
+
+.review-item .review-top-layer{
+    padding: 10px 2px 40px 100px;  /*top, right, bottom, left*/
+    position: relative;
+
+}
+.review-item .review-top-layer img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+.review-item .review-top-layer h3{
+    margin: 5px 0;
+
+}
+.review-item .review-top-layer span{
+    color: var(--mainColor);
+}
+.review-description{
+    line-height: 1.5;
+    font-size: 17px;
+    padding: 5px;
+}

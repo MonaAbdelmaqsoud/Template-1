@@ -1,0 +1,27 @@
+/*//////// 3.7. numbers div /////*/
+.numbers{
+    position: relative;
+    background-image: url(../images/background/background2.webp);
+    background-size:cover; /*to make the image take the whole space that it's inside*/
+    background-attachment: fixed; /*to make the image fixed while scrolling*/
+    height: 300px;
+}
+.number-items{
+    padding: 100px 0;   
+}
+.number-item{
+    width: 25%;
+    text-align: center;
+}
+.number-item .icon{
+    color: var(--mainColor);
+    margin-bottom: 15px;
+}
+.number-item-title{
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--whiteColor);  
+}
+.number-item-text{
+    color: var(--whiteColor);
+}

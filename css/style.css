@@ -1,0 +1,166 @@
+/*
+    1. common styles
+    2. general styles
+    3. sections
+        3.1. Header
+        3.2. home div
+        3.3. about div
+        3.4. portfolio div
+        3.5. offers div
+        3.6. service div
+        3.7. numbers div
+        3.8. pricing section
+        3.9. reviews sec
+        3.10. team section
+        3.11. blog section
+        3.12. contact section
+        3.13. footer section
+*/
+/*common styles >   
+                1) overlay
+                2) opacity hover
+                3) section header
+                4) section padding
+                5) hover effect 1 (L to R)
+                6) hover effect 2 (T to B)
+*/
+
+/*/////// 1. common styles ///////*/
+.overlay{
+    position: absolute; /*to make it's position related to it's parent*/
+    width: 100%; /*full parent's width*/
+    height: 100%; /*full parent's height*/
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7); /*rgba is used to put color plus opacity percentage(alpha)*/  
+}
+.hover-opacity{
+    transition: opacity 0.5s; /*to make any transition happend in 0.5sec, opacity is there to make the transition only happen in opacity not all styles */
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+
+}
+/*the black left to right & top to bottom hover effect common */
+.ltr-effect, .ttb-effect{
+    position: relative;
+}
+.ltr-effect::after, .ttb-effect::after{
+    position: absolute;
+    content: "";
+    /* width: 100%;
+    height: 100%; */
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: #333;
+    z-index: -1; /*to make the effect behind the text*/
+}
+
+/*//////// the black left to right hover effect specific styles ////////// */
+.ltr-effect::after{
+    width: 0;
+    transition: width 0.5s;
+}
+.ltr-effect:hover::after{
+    width: 100%;
+}
+/*//////// the black top to bottom hover effect specific styles ////////// */
+.ttb-effect::after{
+    height: 0;
+    transition: height 0.5s;
+}
+.ttb-effect:hover::after{
+    height: 100%;
+}
+
+
+/*/////// 2. general css styles ////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor : #6195ff;
+    --grayColor : #999;
+    --bg-gray : #f9f9f9;
+    --whiteColor : #fff;
+}
+/*to make the website not start from the edges-> we give container class to a div inside the section div(not to the section itself)
+        > for the content of the header to not start from the edges (but the bg starts from the edges normally) we put the container class inside the header */
+.container{
+    width: 80%;
+    margin: auto;    /*to make the element in the center of the page*/
+}
+/*to apply the font-family to all page*/
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: montserrat, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    font-family: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*a general style to make padding up and down the section*/
+.padding-y{
+    padding: 120px 0;  /*120px from top and bottom and 0 on left and right*/
+}
+
+/*section header styles*/
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size: 35px; 
+}
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 70px;
+    background: var(--mainColor);
+    margin: auto;
+    margin-bottom: 70px; /*to make the fixed space after the line*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+/*//////// 3.1. Header /////////*/
+.header{
+    position: fixed; /*to make the header fixed at scrolling*/
+    width: 100%;
+    z-index: 10; /*to make the header appear above home section*/
+    background: rgba(0,0,0,0.4);
+}
+
+/*sol 1 for float*/
+.clear{
+    clear: both;
+}
+/*sol 2 for float > this sol is not used in the container div (it's made in another div) as some section won't need it*/
+/*if we made this solution a problem will happend if there was a dropdown menue*/
+/* .header-content{
+    overflow: hidden; 
+} */
+
+.header .logo{
+    width: 40%;
+}
+
+.header .logo img{
+    width: 20%;
+    margin-top: 15px;
+}
+
+.header .nav{
+    width: 60%;
+    list-style: none; /*to remove the items's points*/
+    text-align: right; /*to make all the list items on the right*/
+}
+
+/*we use selector > to apply the needed styles only on the li chlidren oof nav*/
+.header .nav > li{
+    display: inline-block; /*to put the items next to eachother*/
+    text-align: right; /*to make the links on the right*/
+}
+
+.header .nav > li > a{
+    color: var(--whiteColor);
+    font-size: 15px;
+    display: block;  /*block because every li has only 1 a so it dosen't matter if it's inline-block or block*/
+    padding: 30px 15px;   /*to make the whole link clickable*/
+}
+/*to make a div appear under(after) every anchor element, ang give the same styles(except width) to the element with an active class */
+.header .nav > li > a::after, .header .nav li > a.active::after{
+    content: "";
+    display:block;
+    height: 3px;
+    background-color: var(--mainColor);
+    margin-top: 2px;
+    transition: width 0.5s; /*to make the transitioning in 0.5 sec*/
+}
+.header .nav > li > a.active::after{
+    width: 100%;   /*to make the link with class active have an after div all the time*/
+}
+.header .nav > li > a::after{
+    width: 0;
+}
+/*to make the after content appear at the link's hover*/
+.header .nav > li > a:hover::after{
+    width: 100%;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    background: var(--mainColor);
+    width: 125px;
+    text-align: center;
+    left: -50%;
+    top: 70%;
+    opacity: 0;  /*to make the dropdown menu disappear*/
+    visibility: hidden; /*to make the dropdown menu disappear*/
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1; /*to make the dropdown menu appear*/
+    visibility: visible; /*to make the dropdown menu appear*/
+}
+.dropdown-menu a{
+    color: var(--whiteColor);
+    display: block;
+    padding: 10px;
+}

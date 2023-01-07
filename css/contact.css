@@ -1,0 +1,50 @@
+/*//// 3.12) contact section /////*/
+.contact-item{
+    width: 30%;
+    text-align: center;
+}
+.contact-item .icon{
+    color: var(--mainColor);
+}
+.contact-item .contact-title{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.contact-item .contact-info{
+    color: var(--grayColor);
+}
+.contact .contact-form{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.contact-form input{
+    background: var(--bg-gray);
+    border: 0;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+.contact-form .name, .contact-form .email{
+    width: 49%;
+}
+.contact-form .name{
+    margin-right: 1.5%;
+}
+.contact-form .subject{
+    width: 100%;
+}
+.contact-form .message{
+    width: 100%;
+    background: var(--bg-gray);
+    border: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.contact-form .btn{
+    border: 0;
+    width: 150px;
+    padding: 10px;
+    background: var(--mainColor);
+    color: var(--whiteColor);
+}
